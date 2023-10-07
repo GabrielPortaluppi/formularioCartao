@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Cartão</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="container__cartao">
+            <div class="container__cartao__frente">
+                <img src="images/card-logo.svg" alt="Logo" class="imagem__logo">
+                <h2 class="container__cartao__frente__numero inputs" id="numero__cartao">0000 0000 0000 0000</h2>
+                <div class="div__texto">
+                    <p class="container__cartao__frente__nome inputs" id="nome__cartao">xxxxxxxxx</p>
+                    <p class="container__cartao__frente__data inputs" id="data__cartao">00/00</p>
+                </div>
+            </div>  
+        </section>
+
+        <section class="container__section__form">
+            <form class="container__form" id="formulario"> 
+                <div class="container__nome  inputs">
+                    <label for="nome" class="label">CARDHOLDE NAME</label>
+                    <input type="text" name="nome" id="name" required placeholder="Valdemir de Oliveira" class="input__name" minlength="3">
+                    <span class="mensagem__erro" id="mensagem-erro"></span>
+                </div>
+                <div class="container__number  inputs">
+                    <label for="numero" class="label">CARD NUMBER</label>
+                    <input type="number" name="numero" id="numero" required placeholder="xxxx xxxx xxxx xxxx" class="input__number" >
+                    <span class="mensagem__erro" id="mensagem-erro"></span>
+                </div>
+                <div class="container__data inputs">
+                    <label for="data" class="label">DATE</label>
+                    <input type="date" name="data" id="data" required placeholder="MM/YY/MMYY" class="input__date">
+                    <span class="mensagem__erro" id="mensagem-erro"></span>
+                </div>
+                <input type="submit" value="Confirm" class="input__botao ">
+            </form>
+        </section>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>

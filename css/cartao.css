@@ -1,0 +1,65 @@
+.container__cartao {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    height: 280px;
+    background-size: cover;
+}
+
+.container__cartao__frente {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left, #6344F9, #6D90DB, #600595);
+    width: 370px;
+    height: 200px;
+    align-self: center;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.container__cartao__frente:hover {
+    transform: translate(-4px, -4px);
+    transition: 0.5s;
+}
+
+.imagem__logo {
+    margin: 20px 0 26px 14px;
+    width: 24%;
+}
+
+.container__cartao__frente__numero {
+    font-family: var(--font-principal);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.div__texto {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    color: white;
+}
+
+.container__cartao__frente__nome {
+    font-family: var(--font-principal);
+}
+
+.container__cartao__frente__data {
+    font-family: var(--font-principal);
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container__cartao {
+        width: 30%;
+        height: 100vh;
+    }
+
+    .container__cartao__frente {
+       margin: 40% 0 0 50%;
+    }
+}

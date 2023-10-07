@@ -1,0 +1,109 @@
+.container__section__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-family: var(--font-principal);
+    color: var(--botao);
+    font-size: 20px;
+}
+
+.input__name {
+    padding: 14px;
+    border: 2px solid var(--borda-input);
+    width: 300px;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--font-principal);
+}
+
+.input__number {
+    padding: 14px;
+    border: 2px solid var(--borda-input);
+    width: 300px;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--font-principal);
+}
+
+.input__date {
+    padding: 14px;
+    border: 2px solid var(--borda-input);
+    width: 200px;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--font-principal);
+}
+
+.input__botao {
+    display: block;
+    margin: auto;
+    align-items: center;
+    background-color: var(--botao);
+    color: white;
+    padding: 14px;
+    font-size: 20px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.mensagem__erro {
+    font-size: 18px;
+    font-family: var(--font-principal);
+    color: red;
+    margin: 5px 0 20px 0;
+}
+
+
+@media screen and (min-width:1200px) {
+    .container__section__form {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .label {
+        font-size: 24px;
+    }
+
+    .input__name {
+        width: 400px;
+        padding: 16px;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.347);
+    }
+
+    .input__number {
+        width: 400px;
+        padding: 16px;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.347);
+    }
+
+    .input__date {
+        width: 300px;
+        padding: 16px;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.347);
+    }
+
+    .input__botao {
+        width: 400px;
+        padding: 16px;
+    }
+
+    .mensagem__erro {
+        font-size: 20px;
+    }
+}
